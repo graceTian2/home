@@ -1,0 +1,378 @@
+/*defining names for the fonts*/
+@font-face{
+	font-family:Simplifica;
+	src:url(fonts/SIMPLIFICA.ttf);
+}
+@font-face{
+	font-family:D-Din;
+	src:url(fonts/D-DIN.ttf);
+}
+
+/*Other formatting*/
+/*Formats general body color and font*/
+body{
+	background-color:lightGray;
+	font-family:"D-Din";
+}
+
+/*Formats larger captions*/
+h2{
+	text-align:center;
+	font-family:Simplifica;
+}
+
+/*Formats smaller page captions*/
+h3 {
+	padding-top:15px;
+}
+
+/*Formats general images*/
+img{
+ 	border-width:4px; /*This formats all the images to have the same border*/
+	border-color:DimGray;
+	border-style:solid;
+}
+
+/*Formats different parts of the table*/
+table,td,th{
+	border:solid DimGray 2px;
+	padding:15px;
+	border-collapse:collapse;
+	background-color:#f2f2f2;
+}
+
+td,th{
+	padding:10px;
+}
+
+th{
+	font-size:25px;
+	background-color:#9ad2e5;
+}
+
+td{
+	font-size:15px;
+}
+
+/*Formats header (menu and title)*/
+.header{
+	text-align:center;
+	font-size:30px;
+	font-family:Simplifica;
+}
+
+/*Formats menu buttons*/
+.menu a{
+	text-align:center;
+	background-color:DarkGray;
+	padding:20px;
+	margin:15px;
+	border-color:gray;
+	border-style:solid;
+	border-width:4px;
+	text-decoration:none;
+	font-size:25px;
+	color:white;
+}
+
+/*Formats buttons to change when hovered over*/
+.menu a:hover{
+	background-color:#808080;
+	border-color:DimGray;
+}
+
+/*Formats sections with darker background*/
+.dark-section{
+	padding:20px;
+	background-color:DarkGray;
+	margin-top:20px;
+	width:100%;
+}
+
+/*Formats sections with the body background colour*/
+.light-section{
+	margin:15px;
+	float:left;
+	width:100%
+}
+
+/*Formats sections with image backgrounds*/
+.img-section{
+	width:1500px;
+	height:650px;
+	margin-top:20px;
+	margin-bottom:30px;
+	padding-left:60px;
+	padding-right:60px;
+	float:left;
+}
+
+/*Formats the entire art displays*/
+.gallery{
+	float:left;
+	margin:15px;
+	padding-bottom:10px;
+	background-color:#f2f2f2;
+	transition:margin 1s
+}
+
+/*Formats the margins between art to fit better when moving*/
+.gallery:hover{
+	margin:5px;
+}
+
+/*Formats a few specific art pieces so they fit better*/
+.gallery.smallerMargin{
+	margin:15px;
+	transition:margin 1s;
+}
+
+/*Formats a few specific art pieces so they move better*/
+.gallery.smallerMargin:hover{
+	margin:0px;
+}
+
+/*Formats the image parts of the art displays*/
+.gallery img{
+	height:300px;
+	width:auto;
+	border-bottom:0px;
+	transition:opacity 1s, height 1s
+}	
+
+/*Formats the images when hovered over*/
+.gallery img:hover{
+	opacity:0.6;
+	height:310px;
+}
+
+/*Formats the captions for the art*/
+.description{
+	text-align:center;
+}
+
+/*Formats all around smaller text*/
+.small{
+	font-size:10px;
+}
+
+/*Formats the footers as a whole*/
+.footer{
+	bottom:0;
+	width:100%;
+	background-color:DimGray;
+	clear:both;
+	height:30px;
+	text-align:center;
+	padding:15px 0px 15px 0px
+}
+
+/*Formats the back to top text*/
+.footerText{
+	text-decoration:none;
+	color:white;
+	font-weight:bolder;
+}
+
+/*Formats the CSS Validator link symbol*/
+.cssValidator{
+	float:left;
+	margin:2px;
+}
+
+.htmlValidator{
+	float:left;
+	margin:1px;
+}
+
+/*Formats parts with extra space*/
+.extension{
+	width:100%;
+	height:450px;
+	float:left;
+	
+}
+
+/*These all format individual chunks of text, pictures or backgrounds*/
+#basicFacts{
+	margin:15px;
+	width:1000px;
+}
+
+#aboutMe{
+	width:100%;
+	float:left;
+}
+
+#dogPicture{
+	float:right;
+	width:200px;
+	margin-left:300px;
+	margin-right:200px
+}
+
+/*formats the blue background section*/
+#blueBackground{
+	background-image:url(images/blueBackground.jpg);
+	width:1375px;
+	height:488px;
+	float:left;
+	filter:brightness(1.2);
+}
+
+#lifeTable{
+	float:left;
+	margin:20px;
+	margin-top:50px;
+	color:black;
+}
+
+#synchro{
+	margin:15px;
+	margin-right:650px;
+}
+
+#artIntro{
+	padding-right:850px;
+	float:left;
+	width:650px;
+}
+
+/*Formats the entire art gallery*/
+#artGallery{
+	float:left;
+	margin:5px 10px 30px 5px;
+}
+
+#ibisPaintXPicture{
+	float:right;
+	margin-top:70px;
+	width:200px;
+	margin-right:250px;
+	border-width:0px;
+}
+
+#moreInfoArt{
+	margin:100px;
+	margin-top:50px;
+	width:700px;
+	float:left;
+}
+
+#mechPencilPicture{
+	float:left;
+	width:300px;
+	margin-top:50px;
+	margin-left:150px;
+	border-width:0px;
+}
+
+#artMaterials{
+	margin:100px;
+	margin-top:0px;
+	width:675px;
+	float:right;
+}
+
+#synchroPicture1{
+	float:right;
+	width:350px;
+	height:auto;
+	margin-right:150px;
+	margin-top:50px;
+	font-size:15px;
+}
+
+#synchroPicture2{
+	width:300px;
+	margin-bottom:15px;
+}
+
+#synchroPicture3{
+	height:250px;
+	float:right;
+	margin-right:150px;
+}
+
+#biathlon{
+	margin:30px;
+	margin-left:650px;
+}
+
+#biathlonMedalsPicture{
+	width:400px;
+	float:left;
+	margin:50px;
+	margin-left:100px;
+}
+
+#otherMedals{
+	width:550px;
+	float:right;
+	margin:50px;
+	margin-right:100px;
+}
+
+#otherSports{
+	float:left;
+	padding:15px;
+	width:600px;
+	margin-left:30px;
+}
+
+#likes{
+	float:left;
+	width:575px;
+	margin:30px 30px 30px 80px;
+}
+
+#dislikes{
+	float:right;
+	width:575px;
+	margin:30px 80px 30px 30px
+	
+}
+
+/*Formats the titles of the likes and dislikes sections*/
+div#likes > h3, div#dislikes > h3{
+	text-align:center;
+	font-size:20px;
+}
+
+#randomFacts{
+	margin:15px;
+}
+
+/*Formats the 2 columns of random facts*/
+#randomFactsList{
+	max-width:1200px;
+	max-height:420px;
+	float:left;
+	margin:15px;
+	margin-top:15px;
+	column-width:500px;
+	column-gap:200px;
+	height:600px;
+	column-rule:2px solid dimGray;
+}
+
+#factsConclusion{
+	float:left;
+	width:50%;
+	margin-bottom:50px;
+}
+
+/*Formats the list in the img section*/
+.img-section li{
+	margin-bottom:10px;
+}
+
+/*Formats the subtitle of the random facts section*/
+#randomFacts h3{
+	margin-left:40px;
+	margin-top:70px;
+}
+/*Formats the image background on the random facts page*/
+#winterBackground{
+	background-image:url(images/winter.png);
+}
